@@ -1,0 +1,292 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #faf6f2;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+.navlist {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navlist li a:hover {
+  color: #ff7f50;
+}
+
+.desktop-action {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.card-icon {
+  position: relative;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.card-value {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff7f50;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+.btn {
+  background: #ff7f50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e56c3e;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.content h1 span {
+  color: #ff7f50;
+}
+
+.content p {
+  margin: 15px 0 25px;
+  color: #555;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #ff7f50;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+.image-container img {
+  width: 400px;
+}
+
+/* Services Section */
+.services-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.text-center h5 {
+  color: #ff7f50;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.text-center h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.service-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Menu Section */
+.menu-section {
+  text-align: center;
+  padding: 80px 0;
+  background: #fffaf0;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-images img {
+  width: 180px;
+  border-radius: 12px;
+  border: 3px solid #ddd;
+}
+
+.menu-card .price {
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+/* Review Section */
+.review-section {
+  padding: 60px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.review-section h5 {
+  color: #ff7f50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.review-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.swiper {
+  width: 80%;
+  height: 250px;
+  margin: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff7f50;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #333;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-card {
+    width: 90%;
+  }
+}
